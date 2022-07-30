@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+    	<meta charset="UTF-8">
+    	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>Dokumen
+		</title>
+		<link href="https://fonts.googleapis.com/css2?family=Ibarra+Real+Nova&family=Montserrat:wght@100&display=swap" rel="stylesheet">
+		<link rel="stylesheet" href="Login.css">
+	</head>
+	<body>		
+		
+			<div class="box">
+				<form>
+				
+					Username
+					<input type="text" name="username" id="Username" /> 
+					<br>
+            		Password  
+            	<input type="password" name="password" id="Password" />
+           		<br>
+           	</form>
+           	<input type="submit" value="Login" onclick="checkForm()">
+           	</div>
+           	
+        	
+<!-- Sweet alert -->
+
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+    <script>
+    	function checkForm() {
+    		var Username =document.getElementById("Username").value;
+    		var Password =document.getElementById("Password").value;
+
+    		if(Username =="" || Password ==""){
+				swal("Maaf", "Data tidak boleh kosong");
+}
+			else{
+				swal({
+					title: "Selamat",
+					text: "Anda Berhasil Login",
+					icon: "succes",
+
+				}).then((Lanjut) => {
+					if (Lanjut) {
+						window.location.href = "Home ii.html";
+					}
+				});
+
+				}
+			}
+
+    	
+
+</script>
+</body>
+</html>
+
+

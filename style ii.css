@@ -1,0 +1,152 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body {
+	overflow: hidden;
+}
+table {
+	margin-left: auto;
+	margin-right: auto;
+	font-size: 27px;
+	width: 800px;
+
+}
+.submit,
+.reset{
+	font-size: 23px;
+
+}
+#tabel {
+	font-size: 17px;
+}
+.ttl{
+	font-size: 20px;
+}
+.kata {
+	font-size: 25px;
+}
+
+.home {
+	position: relative;
+	width: 100%;
+}
+.sidebar {
+	position: fixed;
+	width: 300px;
+	height: 100%;
+	background: rgb(47,79,79);
+	overflow-x: hidden;
+	box-shadow: 0 3px 9px rgb(47,79,7);
+	z-index: 2;
+}
+
+.nama {
+	padding-left: 10px;
+	display: flex;
+	line-height: 40px;
+	margin-bottom: 20px;
+	border-bottom: 4px solid rgb(240,255,240);
+	color: lightgrey;
+}
+.nama h4 {
+	padding-left: 15px;
+	font-size: 23px;
+}
+.nama img {
+	margin-top: 14px;
+	border-radius: 30px;
+}
+.sidebar ul li {
+	display: flex;
+	width: 100%;
+	list-style: none;
+	text-align: center;
+	color: ;
+}
+.sidebar ul li:hover {
+	margin: 8px;
+	background: darkgrey;
+}
+
+.sidebar ul li a {
+	width: 100%;
+	text-decoration: none;
+	color: ghostwhite;
+	height: 45px;
+	display: flex;
+	font-size: 32px;
+}
+
+.sidebar ul li i {
+	min-width: 20px;
+	font-size: 25px;
+}
+
+.utm{
+	position: absolute;
+	left: 300px;
+}
+
+.ats{
+	position: fixed;
+	height: 45px;
+	width: calc(100% - 300px);
+	background-color: rgb(53, 88, 88);
+}
+
+.dlm {
+	position: fixed;
+	margin-top: 3px;
+}
+
+.isi{
+	margin: 70px 130px 60px 130px;
+	text-align: center;
+	font-size: 18px;
+	font-family: 'sans-serif', calibri;
+}
+
+.prg {
+	text-align: center;
+	display: flex;
+}
+
+.prg p {
+	font-size: 2px;
+	border-style: double;
+	background-color: rgb(245,245,220);
+	margin-left: 120px;
+	padding: 15px;
+	border-radius: 10px;
+}
+
+.tabel{
+	border-radius: 20px;
+	font-family: 'ns-serif' calibri;
+	text-align: left;
+	margin-right: 20px;
+	margin-left: 120px;
+	padding: 50px 0px 70px 30px;
+	font-size: 2px;
+	background-color: gainsboro;
+}
+
+.inp {
+	font-size: 16px;
+	padding: 2px;
+	margin-top: 10px;
+	margin-left: 5px;
+	border-radius: 5px;
+	cursor: pointer;
+}
+
+.spd {
+	border-radius: 5px;
+}
+span{
+	font-size: 10px;
+	color: red;
+}

@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+    	<meta charset="UTF-8">
+    	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>Dokumen</title>
+		<link href="https://fonts.googleapis.com/css2?family=Ibarra+Real+Nova&display=swap" rel="stylesheet">
+		<link rel="stylesheet" href="style ii.css">
+		<script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+	</head>
+	<body>
+		<div class="home">
+		<div class="sidebar">
+		<div class="nama">
+			<img src="https://tse1.mm.bing.net/th?id=OIP.EoMfDINOTwmckw-UW22DiwHaH2&pid=Api&P=0" alt="image" height="55" weight="55">
+			<h4>Hajriansah <br> F55121046</h4>
+		</div>
+			<ul>
+                <li><i class="fas fa-home"></i><a href="Home ii.html" class="title">Home</a></li>
+               	<li><i class="fas fa-home"></i><a href="tabel ii.html" class="title">Data Anggota</a></li>
+                <li><i class="fas fa-home"></i><a href="Formulir ii.html" class="title">Formulir</a></li>
+                <li><i class="fas fa-home"></i><a href="Login ii.html" class="title">Log Out</a></li>
+            </ul>
+        </div>
+            <div class="utm">
+         	<div class="ats">
+      		<div class="dlm">
+   			<div class="isi">
+            	<h1>Formulir</h1>
+        </div>
+       		<div class="isiform">
+		<form>
+   			<div class="tabel">
+   					
+		<table>											
+		<tr>
+			<td>Namal Lengkap</td>
+			<td>:</td>
+			<td align="left">
+				<input type="text" class="kata" onkeyup="validatename()" id="bionama" name="namadepan">
+			</td>
+			<td>
+				<span id="nama"></span>
+			</td>
+		</tr>
+		<tr>
+			<td>Tanggal Lahir</td>
+			<td> : </td>
+			<td align="left">
+				<input type="date" class="ttl" onkeyup="validatetgl ()" id="biottl" name="tgllahir"/>
+			</td>
+			<td>
+				<span id="ttl"></span>
+			</td>
+		</tr>
+		<tr>
+			<td>Jenis Kelamin</td>
+			<td> : </td>
+			<td align="left">
+				<input type="radio" name="jk" value="pria" /> Pria
+				<input type="radio" name="jk" value="wanita" />Wanita
+				</td>
+		</tr>
+		<tr>
+			<td>No Telepon</td>
+			<td> : </td>
+			<td align="left">
+				<input type="text" class="kata" onkeyup="validatetelp ()" id="biono" name="username" />
+			</td>
+			<td>
+				<span id="no"></span>
+			</td>
+		</tr>
+		<tr>
+			<td>Alamat</td>
+			<td> : </td>
+			<td align="left">
+				<textarea name="alamat" id="bioalamat" onkeyup="validatealamat ()"  cols="40" rows="4"/>
+			</textarea>	</td>
+			<td>
+				<span id="alamat"></span>
+			</td>
+		</tr>				
+		<tr>
+			
+			<td align="submit">
+			<input type="submit" onclick="validsubmit()" value="Simpan" id="submit" class="submit" />
+			<input type="reset" value="Reset" class="reset" />
+		</tr>
+	</table>
+	</form>
+	<script src="validasi ii.js"></script>
+	<script>
+		function validsubmit(){
+			var nama = document.getElementById ("bionama").value;
+			var ttl = document.getElementById ("biottl").value;
+			var telp = document.getElementById ("biono").value;
+			var alamat = document.getElementById ("bioalamat").value;
+
+			if (nama == "" || ttl == "" || telp == "" || alamat == ""){
+				swal({
+					title: "sorrry",
+					text: "Data belum diinput",
+					icon: "error",
+					button: "ok",
+				});
+			}
+			else {
+				swal({
+					title: "Yeah",
+					text: "Data anda telah terinput",
+					icon: "success",
+					button: "ok",
+				});
+			}
+		}
+	</body>
+</html>

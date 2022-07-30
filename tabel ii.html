@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+    	<meta charset="UTF-8">
+    	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>Dokumen
+		</title>
+		<link href="https://fonts.googleapis.com/css2?family=Ibarra+Real+Nova&display=swap" rel="stylesheet">
+		<link rel="stylesheet" href="style.css">
+		<link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.12.1/css/jquery.dataTables.min.css"/>
+ 
+		<script type="text/javascript" src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+		<script type="text/javascript" src="https://cdn.datatables.net/1.12.1/js/jquery.dataTables.min.js"></script>
+	</head>
+	<body>		
+		<div class="home">
+		<div class="sidebar"> 
+		<div class="nama">
+			<img src="https://tse1.mm.bing.net/th?id=OIP.EoMfDINOTwmckw-UW22DiwHaH2&pid=Api&P=0" alt="image" height="55" width="55">
+			<h4>Hajriansah <br> F55121046</h4>
+		</div>
+	        <ul>
+	            <li><i class="fas fa-home"></i><a href="Home ii.html" class="title">Home</a></li>
+                <li><i class="fas fa-home"></i><a href="tabel ii.html" class="title">Data Anggota</a></li>
+                <li><i class="fas fa-home"></i><a href="Formulir ii.html" class="title">Formulir</a></li>
+                <li><i class="fas fa-home"></i><a href="Login ii.html" class="title">Log Out</a></li>
+            </ul>
+        </div>
+        <div class="utm">
+        <div class="ats">
+       	<div class="dlm">
+        <div class="isi">
+            <h1>Data Anggota</h1>
+
+        <table id="tabel" class="display" border="5" align="center">
+
+        	<thead>
+        	<tr>
+                <td>No</td>
+                <td>Nama Lengkap</td>
+                <td>Tanggal Lahir</td>
+                <td>Jenis Kelamin</td>
+                <td>No Telepon</td>
+                <td>Alamat</td>
+            </tr>
+            </thead>
+            <tbody> 
+            <tr>
+                <td>1</td>
+                <td>Hajriansah</td>
+                <td>15-01-2003</td>
+                <td>L</td>
+                <td>082251148648</td>
+                <td>Jln. Bukit Uhud</td>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td>Sahrul</td>
+                <td>25-05-2003</td>
+                <td>L</td>
+                <td>082342143264</td>
+                <td>Jln. Uwe Goda</td>
+            </tr>
+            <tr>
+                <td>3</td>
+                <td>Rivaldi Sabala</td>
+                <td>12-02-2002</td>
+                <td>L</td>
+                <td>082286697866</td>
+                <td>Jln. Dewi Sartika</td>
+            </tr>
+            <tr>
+                <td>4</td>
+                <td>Abib Raif</td>
+                <td>18-08-2003</td>
+                <td>L</td>
+                <td>085231737264</td>
+                <td>Jln. Tona Roa</td>
+            </tr>
+            <tr>
+                <td>5</td>
+                <td>Andhika</td>
+                <td>17-04-2003</td>
+                <td>L</td>
+                <td>082264328193</td>
+                <td>Jln. Laluna</td>
+            </tr>
+             <tr>
+                <td>6</td>
+                <td>Rahmad</td>
+                <td>06-08-2003</td>
+                <td>L</td>
+                <td>085287283751</td>
+                <td>Jln. Cempaka</td>
+            </tr>
+             <tr>
+                <td>7</td>
+                <td>Muammar Arianto</td>
+                <td>28-11-2001</td>
+                <td>L</td>
+                <td>087829117428</td>
+                <td>Jln. Veteran</td>
+            </tr>
+             <tr>
+                <td>8</td>
+                <td>Fauzan</td>
+                <td>29-05-2004</td>
+                <td>L</td>
+                <td>082286734629</td>
+                <td>Jln. Karanja Lembah</td>
+            </tr>
+             <tr>
+                <td>9</td>
+                <td>Moh Isran</td>
+                <td>13-04-2003</td>
+                <td>L</td>
+                <td>085281748293</td>
+                <td>Jln. Merpati</td>
+            </tr>
+             <tr>
+                <td>10</td>
+                <td>Niluh Nia</td>
+                <td>03-08-2003</td>
+                <td>P</td>
+                <td>085281937152</td>
+                <td>Jln. Untad 1</td>
+            </tr>
+             <tr>
+                <td>11</td>
+                <td>Ade Sinta</td>
+                <td>10-08-2003</td>
+                <td>P</td>
+                <td>082381362184</td>
+                <td>Jln. Dayodara</td>
+            </tr>
+             <tr>
+                <td>12</td>
+                <td>Nadya Afriani</td>
+                <td>18-09-2003</td>
+                <td>P</td>
+                <td>082213628493</td>
+                <td>Jln. Lagarutu</td>
+            </tr>
+             <tr>
+                <td>13</td>
+                <td>Isra Septia</td>
+                <td>12-11-2003</td>
+                <td>P</td>
+                <td>082297527384</td>
+                <td>Jln. Kelor</td>
+            </tr>
+        </tbody>
+  	</table>
+  </div>
+</div>
+</div>
+</div>
+ <script>
+ 	$(document).ready(function() {
+ 		$("#tabel").DataTable();
+
+ 	});
+ </script>
+
+</body>
+</html>
